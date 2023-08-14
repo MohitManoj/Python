@@ -1,0 +1,25 @@
+sample_list = [(2, 5), (1, 2), (4, 4), (2, 3), (2, 1)]
+
+# Sort the list based on the last element of each tuple
+for i in range(len(sample_list)):
+    for j in range(i + 1, len(sample_list)):
+        if sample_list[i][-1] > sample_list[j][-1]:
+            # Swap the tuples
+            temp = sample_list[i]
+            sample_list[i] = sample_list[j]
+            sample_list[j] = temp
+
+print(sample_list)
+
+
+
+
+ascii_dict = {}
+
+
+ascii_dict['a'] = ord('a')
+ascii_dict['b'] = ord('b')
+
+print(ascii_dict)
+
+
