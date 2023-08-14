@@ -1,0 +1,31 @@
+def sum_numbers(numbers):
+    total = 0
+    for num in numbers:
+        total += num
+    return total
+
+numbers_list = [1, 2, 3, 4, 5]
+result = sum_numbers(numbers_list)
+print("Sum:", result)
+
+
+
+
+def reverse_string(input_string):
+    reversed_string = ''
+    for char in input_string:
+        reversed_string = char + reversed_string
+    return reversed_string
+
+input_str = "Hello, world!"
+reversed_str = reverse_string(input_str)
+print("Reversed:", reversed_str)
+
+
+def count_upper_lower(input_string):
+    return sum(1 for char in input_string if char.isupper()), sum(1 for char in input_string if char.islower())
+
+input_str = input("Enter a string: ")
+upper_count, lower_count = count_upper_lower(input_str)
+print("Uppercase letters:", upper_count)
+print("Lowercase letters:", lower_count)
