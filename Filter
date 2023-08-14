@@ -1,0 +1,27 @@
+add_25 = lambda x: x + 25
+
+print("Sample input:", (sample_input := 10))
+print("Sample output:", add_25(sample_input))
+
+
+
+def triple_number(num):
+    return num * 3
+
+input_list = [1, 2, 3, 4, 5]
+tripled_list = list(map(triple_number, input_list))
+
+print("Original list:", input_list)
+print("Tripled list:", tripled_list)
+
+
+
+
+def square_number(num):
+    return num ** 2
+
+input_list = [1, 2, 3, 4, 5]
+squared_list = list(map(square_number, input_list))
+
+print("Original list:", input_list)
+print("Squared list:", squared_list)
